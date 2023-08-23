@@ -23,7 +23,6 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
         - name: localhost-dir
           enabled: yes
           diraddress: localhost
-
       bareos_webui_configuration:
         - section: session
           option: timeout
