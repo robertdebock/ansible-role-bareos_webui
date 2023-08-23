@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: robertdebock
-  role_name: bareos_console
+  role_name: bareos_webui
   description: Install and configure BareOS WebUI on your system.
   license: Apache-2.0
   company: none
