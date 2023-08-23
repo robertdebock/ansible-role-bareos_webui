@@ -10,7 +10,6 @@
         - name: localhost-dir
           enabled: yes
           diraddress: localhost
-
       bareos_webui_configuration:
         - section: session
           option: timeout
