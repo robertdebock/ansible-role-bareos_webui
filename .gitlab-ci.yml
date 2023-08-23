@@ -22,8 +22,6 @@ molecule:
         tag: "latest"
       - image: "fedora"
         tag: "37"
-      - image: "opensuse"
-        tag: "latest"
       - image: "ubuntu"
         tag: "latest"
 

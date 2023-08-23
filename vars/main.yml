@@ -5,7 +5,6 @@ _bareos_webui_httpd_service:
   default: httpd
   Alpine: apache2
   Debian: apache2
-  Suse: apache2
   RedHat: httpd
 
 bareos_webui_httpd_service: "{{ _bareos_webui_httpd_service[ansible_os_family] | default(_bareos_webui_httpd_service['default']) }}"
