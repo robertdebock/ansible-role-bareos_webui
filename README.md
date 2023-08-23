@@ -1,6 +1,6 @@
 # [bareos_webui](#bareos_webui)
 
-Install and configure BareOS WebUI on your system.
+Install and configure [BareOS WebUI](https://www.bareos.com/) on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
