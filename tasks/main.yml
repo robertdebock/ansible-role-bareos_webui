@@ -44,12 +44,15 @@
     section: "{{ item.section }}"
     option: "{{ item.option }}"
     value: "{{ item.value }}"
+    owner: root
+    group: root
+    mode: '0644'
   loop: "{{ bareos_webui_configuration }}"
   loop_control:
     label: "{{ item.section }}:{{ item.option }}"
 
 - name: Set SELinux boolean httpd_can_network_connect
-  ansible.builtin.seboolean:
+  ansible.posix.seboolean:
     name: httpd_can_network_connect
     state: yes
     persistent: yes
