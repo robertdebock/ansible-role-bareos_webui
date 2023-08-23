@@ -1,0 +1,12 @@
+---
+- name: Verify
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  tasks:
+    - name: Check http://localhost/bareos-webui/ is reachable
+      ansible.builtin.uri:
+        url: http://localhost/bareos-webui/
+        status_code: 200
+        timeout: 5
