@@ -57,10 +57,10 @@
     state: yes
     persistent: yes
   when:
-    - ansible_selinux
-    - ansible_selinux['status'] == 'enabled'
-    - ansible_selinux['policyvers'] == 'targeted'
+    - ansible_selinux.status is defined
+    - ansible_selinux.status == "enabled"
 
+# As the web-ui may not have bconsole installed and configured, this task is disabled for now.
 # - name: Create user for bareos-webui
 #   ansible.builtin.shell:
 #     cmd: |
