@@ -17,7 +17,7 @@
     path: /etc/bareos-webui/directors.ini
     section: "{{ item.name }}"
     option: enabled
-    value: "{{ item.enabled | ternary('true', 'false') }}"
+    value: "{{ item.enabled | ternary('Yes', 'No') }}"
     owner: root
     group: root
     mode: '0644'
