@@ -1,0 +1,7 @@
+---
+# defaults file for bareos_webui
+
+bareos_webui_configuration:
+  - section: session
+    option: timeout
+    value: 3600
