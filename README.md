@@ -23,6 +23,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
         - name: localhost-dir
           enabled: yes
           diraddress: localhost
+        - name: disabled-dir
+          enabled: no
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/robertdebock/ansible-role-bareos_webui/blob/master/molecule/default/prepare.yml):
@@ -53,6 +55,8 @@ bareos_webui_configuration:
   - section: session
     option: timeout
     value: 3600
+
+bareos_webui_directors: []
 ```
 
 ## [Requirements](#requirements)
@@ -81,10 +85,10 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 
 |container|tags|
 |---------|----|
-|[Debian](https://hub.docker.com/repository/docker/robertdebock/debian/general)|all|
-|[EL](https://hub.docker.com/repository/docker/robertdebock/enterpriselinux/general)|8, 9|
+|[Debian](https://hub.docker.com/repository/docker/robertdebock/debian/general)|bookworm, bullseye, buster|
+|[EL](https://hub.docker.com/repository/docker/robertdebock/enterpriselinux/general)|all|
 |[Fedora](https://hub.docker.com/repository/docker/robertdebock/fedora/general)|37|
-|[Ubuntu](https://hub.docker.com/repository/docker/robertdebock/ubuntu/general)|jammy|
+|[Ubuntu](https://hub.docker.com/repository/docker/robertdebock/ubuntu/general)|jammy, focal|
 
 The minimum version of Ansible required is 2.12, tests have been done to:
 
