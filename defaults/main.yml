@@ -5,3 +5,5 @@ bareos_webui_configuration:
   - section: session
     option: timeout
     value: 3600
+
+bareos_webui_directors: []
