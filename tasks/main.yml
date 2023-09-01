@@ -37,6 +37,8 @@
   loop: "{{ bareos_webui_directors }}"
   loop_control:
     label: "{{ item.name }}"
+  when:
+    - item.enabled
 
 - name: Set settings for configuration.ini
   ansible.builtin.ini_file:
