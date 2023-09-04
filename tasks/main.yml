@@ -6,6 +6,10 @@
   run_once: yes
   delegate_to: localhost
 
+- name: Install requirements
+  ansible.builtin.package:
+    name: "{{ bareos_webui_requirements }}"
+  
 - name: Install bareos-webui
   ansible.builtin.package:
     name: bareos-webui
