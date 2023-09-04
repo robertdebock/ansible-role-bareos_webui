@@ -5,8 +5,11 @@
   gather_facts: no
 
   tasks:
-    - name: Check http://localhost/bareos-webui/ is reachable
+    - name: Check http://localhost/bareos-webui/
       ansible.builtin.uri:
         url: http://localhost/bareos-webui/
         status_code: 200
         timeout: 5
+        return_content: yes
+      register: bareos_webui_output
+      failed_when: "'<title>Bareos - Login</title>' not in bareos_webui_output.content"
