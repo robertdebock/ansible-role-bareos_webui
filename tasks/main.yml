@@ -24,7 +24,7 @@
     value: "{{ item.enabled | ternary('Yes', 'No') }}"
     owner: root
     group: root
-    mode: '0644'
+    mode: "0644"
   loop: "{{ bareos_webui_directors }}"
   loop_control:
     label: "{{ item.name }}"
@@ -37,7 +37,7 @@
     value: "{{ item.diraddress }}"
     owner: root
     group: root
-    mode: '0644'
+    mode: "0644"
   loop: "{{ bareos_webui_directors }}"
   loop_control:
     label: "{{ item.name }}"
@@ -52,7 +52,7 @@
     value: "{{ item.value }}"
     owner: root
     group: root
-    mode: '0644'
+    mode: "0644"
   loop: "{{ bareos_webui_configuration }}"
   loop_control:
     label: "{{ item.section }}:{{ item.option }}"
