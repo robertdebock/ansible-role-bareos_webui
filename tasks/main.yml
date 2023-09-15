@@ -17,7 +17,7 @@
     - Restart httpd
 
 - name: Set "enabled" in directors.ini
-  ansible.builtin.ini_file:
+  community.general.ini_file:
     path: /etc/bareos-webui/directors.ini
     section: "{{ item.name }}"
     option: enabled
@@ -30,7 +30,7 @@
     label: "{{ item.name }}"
 
 - name: Set "diraddress" in directors.ini
-  ansible.builtin.ini_file:
+  community.general.ini_file:
     path: /etc/bareos-webui/directors.ini
     section: "{{ item.name }}"
     option: diraddress
@@ -45,7 +45,7 @@
     - item.enabled
 
 - name: Set settings for configuration.ini
-  ansible.builtin.ini_file:
+  community.general.ini_file:
     path: /etc/bareos-webui/configuration.ini
     section: "{{ item.section }}"
     option: "{{ item.option }}"
