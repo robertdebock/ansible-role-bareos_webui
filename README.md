@@ -1,4 +1,4 @@
-# Ansible role [bareos_webui](#bareos_webui)
+# [Ansible role bareos_webui](#bareos_webui)
 
 Install and configure [Bareos](https://www.bareos.com/) WebUI on your system.
 
