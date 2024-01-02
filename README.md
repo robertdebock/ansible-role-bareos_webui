@@ -4,7 +4,7 @@ Install and configure [Bareos](https://www.bareos.com/) WebUI on your system.
 
 |GitHub|GitLab|Downloads|Version|
 |------|------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-bareos_webui/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bareos_webui/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-bareos_webui/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-bareos_webui)|[![downloads](https://img.shields.io/ansible/role/d/32435)](https://galaxy.ansible.com/robertdebock/bareos_webui)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-bareos_webui.svg)](https://github.com/robertdebock/ansible-role-bareos_webui/releases/)|
+|[![github](https://github.com/robertdebock/ansible-role-bareos_webui/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-bareos_webui/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-bareos_webui/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-bareos_webui)|[![downloads](https://img.shields.io/ansible/role/d/robertdebock/bareos_webui)](https://galaxy.ansible.com/robertdebock/bareos_webui)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-bareos_webui.svg)](https://github.com/robertdebock/ansible-role-bareos_webui/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
