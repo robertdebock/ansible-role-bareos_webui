@@ -24,7 +24,6 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - jammy
-        - focal
 
   galaxy_tags:
     - backup
