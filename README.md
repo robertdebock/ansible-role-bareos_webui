@@ -86,7 +86,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |container|tags|
 |---------|----|
 |[Debian](https://hub.docker.com/r/robertdebock/debian)|bookworm, bullseye, buster|
-|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|8, 9|
+|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|9|
 |[Fedora](https://hub.docker.com/r/robertdebock/fedora)|38, 39|
 |[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|jammy|
 
