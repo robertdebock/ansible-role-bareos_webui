@@ -5,7 +5,7 @@
   gather_facts: true
 
   roles:
-    - role: ansible-role-bareos_webui
+    - role: robertdebock.bareos_webui
       bareos_webui_directors:
         - name: localhost-dir
           enabled: true
