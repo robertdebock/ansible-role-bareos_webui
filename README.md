@@ -18,7 +18,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
   gather_facts: true
 
   roles:
-    - role: robertdebock.bareos_webui
+    - role: ansible-role-bareos_webui
       bareos_webui_directors:
         - name: localhost-dir
           enabled: true
