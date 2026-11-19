@@ -11,6 +11,14 @@
   ansible.builtin.package:
     name: "{{ bareos_webui_requirements }}"
 
+- name: Ensure /run/lock exists | Debian
+  ansible.builtin.file:
+    path: /run/lock
+    state: directory
+    mode: "1777"
+  when:
+    - ansible_facts['os_family'] == 'Debian'
+
 - name: Install bareos-webui
   ansible.builtin.package:
     name: bareos-webui
